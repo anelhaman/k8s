@@ -26,8 +26,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl taint nodes --all node-role.kubernetes.io/master-
 
 # flannel net plugin
-kubectl apply -f https://github.com/anelhaman/k8s/blob/master/kube-flannel.yml
-kubectl apply -f https://github.com/anelhaman/k8s/blob/master/kube-flannel-rbac.yml
+kubectl apply -f https://raw.githubusercontent.com/anelhaman/k8s/master/kube-flannel.yml
+kubectl apply -f https://raw.githubusercontent.com/anelhaman/k8s/master/kube-flannel-rbac.yml
 
 # show pods
 kubectl get pods --all-namespaces
